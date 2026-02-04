@@ -377,7 +377,6 @@ EOF
 #===============================================================================
 
 setup_server_b() {
-    print_banner
     echo -e "${GREEN}Setting up Server B (Abroad - VPN Server)${NC}"
     echo -e "${CYAN}This server runs your V2Ray/X-UI and the paqet server${NC}"
     echo ""
