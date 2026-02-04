@@ -513,7 +513,6 @@ EOF
 #===============================================================================
 
 setup_server_a() {
-    print_banner
     echo -e "${GREEN}Setting up Server A (Entry Point)${NC}"
     echo -e "${CYAN}This server accepts client connections and tunnels to Server B${NC}"
     echo ""
