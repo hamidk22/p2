@@ -20,7 +20,6 @@ MAGENTA='\033[0;35m'
 NC='\033[0m'
 
 
-
 print_step() { echo -e "${BLUE}[*]${NC} $1"; }
 print_success() { echo -e "${GREEN}[✓]${NC} $1"; }
 print_error() { echo -e "${RED}[✗]${NC} $1"; }
@@ -670,7 +669,6 @@ EOF
 #===============================================================================
 
 check_status() {
-    print_banner
     echo -e "${YELLOW}paqet Status${NC}"
     echo ""
     
@@ -722,7 +720,6 @@ check_status() {
 #===============================================================================
 
 uninstall() {
-    print_banner
     echo -e "${YELLOW}Uninstalling paqet...${NC}"
     echo ""
     
@@ -765,7 +762,6 @@ uninstall() {
 #===============================================================================
 
 view_config() {
-    print_banner
     echo -e "${YELLOW}Current Configuration${NC}"
     echo ""
     
@@ -788,7 +784,7 @@ main() {
     check_root
     
     while true; do
-        print_banner
+        
         
         echo -e "${YELLOW}Select option:${NC}"
         echo ""
